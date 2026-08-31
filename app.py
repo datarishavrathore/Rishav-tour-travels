@@ -58,7 +58,7 @@ def login():
                 session["full_name"]=result["full_name"]
                 print(result)
         
-                if email.lower()=="aman@gmail.com":
+                if email.lower()=="Rishav@gmail.com":
                     return redirect(url_for('admin_dashboard'))
                 return redirect(url_for("customer_dashboard"))
         except Exception as e:

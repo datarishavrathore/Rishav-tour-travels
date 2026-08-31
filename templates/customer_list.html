@@ -2,27 +2,27 @@
 
 {% block content %}
 
-<div class="mt-20 min-h-screen bg-teal-50 py-10 px-4 sm:px-6 lg:px-8">
+<div class="mt-20 min-h-screen bg-indigo-50 py-10 px-4 sm:px-6 lg:px-8">
 
     <div class="max-w-7xl mx-auto">
 
         <!-- Header -->
-        <div class="bg-gradient-to-r from-teal-700 to-teal-500
+        <div class="bg-gradient-to-r from-indigo-700 to-indigo-500
                     rounded-2xl shadow-lg p-6 sm:p-8 mb-8 text-white">
 
             <div class="flex flex-col md:flex-row
                         md:items-center md:justify-between gap-5">
 
                 <div>
-                    <p class="text-teal-100 text-sm font-medium uppercase tracking-wider">
-                        AmanTravels
+                    <p class="text-indigo-100 text-sm font-medium uppercase tracking-wider">
+                        RishavTravels
                     </p>
 
                     <h1 class="text-3xl sm:text-4xl font-bold mt-1">
                         Customer List
                     </h1>
 
-                    <p class="text-teal-100 mt-2">
+                    <p class="text-indigo-100 mt-2">
                         Manage and view all your customers
                     </p>
                 </div>
@@ -36,7 +36,7 @@
                         {{ customer|length }}
                     </p>
 
-                    <p class="text-sm text-teal-100">
+                    <p class="text-sm text-indigo-100">
                         Total Customers
                     </p>
 
@@ -57,20 +57,20 @@
 
             <!-- Customer Card -->
             <div class="bg-white rounded-2xl
-                        border border-teal-100
+                        border border-indigo-100
                         shadow-md hover:shadow-xl
                         hover:-translate-y-1
                         transition-all duration-300
                         overflow-hidden">
 
                 <!-- Card Top -->
-                <div class="bg-teal-600 px-5 py-6">
+                <div class="bg-indigo-600 px-5 py-6">
 
                     <div class="flex items-center gap-4">
 
                         <!-- Avatar -->
                         <div class="h-14 w-14 rounded-full
-                                    bg-white text-teal-700
+                                    bg-white text-indigo-700
                                     flex items-center justify-center
                                     text-xl font-bold shadow">
 
@@ -95,7 +95,7 @@
                             </h2>
 
                             <!-- Jinja2: loop.index -->
-                            <p class="text-teal-100 text-sm">
+                            <p class="text-indigo-100 text-sm">
                                 Customer #{{ loop.index }}
                             </p>
 
@@ -113,8 +113,8 @@
                     <div class="flex items-start gap-3">
 
                         <div class="h-9 w-9 shrink-0
-                                    rounded-lg bg-teal-100
-                                    text-teal-700
+                                    rounded-lg bg-indigo-100
+                                    text-indigo-700
                                     flex items-center justify-center">
                             ✉
                         </div>
@@ -130,7 +130,7 @@
                             {% if item.email %}
 
                                 <p class="text-sm font-medium
-                                          text-teal-900
+                                          text-indigo-900
                                           truncate"
                                    title="{{ item.email }}">
                                     {{ item.email }}
@@ -153,8 +153,8 @@
                     <div class="flex items-start gap-3">
 
                         <div class="h-9 w-9 shrink-0
-                                    rounded-lg bg-teal-100
-                                    text-teal-700
+                                    rounded-lg bg-indigo-100
+                                    text-indigo-700
                                     flex items-center justify-center">
                             ☎
                         </div>
@@ -169,7 +169,7 @@
 
                             {% if item.phone %}
 
-                                <p class="text-sm font-medium text-teal-900">
+                                <p class="text-sm font-medium text-indigo-900">
                                     {{ item.phone }}
                                 </p>
 
@@ -189,8 +189,8 @@
 
 
                 <!-- Card Footer -->
-                <div class="border-t border-teal-100
-                            bg-teal-50 px-5 py-4">
+                <div class="border-t border-indigo-100
+                            bg-indigo-50 px-5 py-4">
 
                     <div class="flex items-center justify-between">
 
@@ -209,8 +209,8 @@
 
                             <span class="px-3 py-1
                                          rounded-full
-                                         bg-teal-100
-                                         text-teal-700
+                                         bg-indigo-100
+                                         text-indigo-700
                                          text-xs font-semibold">
                                 Complete
                             </span>
@@ -242,21 +242,21 @@
 
         <!-- Empty State -->
         <div class="bg-white rounded-2xl
-                    border border-teal-100
+                    border border-indigo-100
                     shadow-lg
                     text-center
                     py-16 px-6">
 
             <div class="mx-auto h-20 w-20
                         rounded-full
-                        bg-teal-100
-                        text-teal-600
+                        bg-indigo-100
+                        text-indigo-600
                         flex items-center justify-center
                         text-3xl">
                 👥
             </div>
 
-            <h2 class="mt-5 text-2xl font-bold text-teal-900">
+            <h2 class="mt-5 text-2xl font-bold text-indigo-900">
                 No Customers Found
             </h2>
 

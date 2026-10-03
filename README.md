@@ -16,7 +16,7 @@ A travel-agency web application built with **Flask** (frontend / web layer) that
 
 ## 🏗️ Architecture
 
-![Architecture Diagram](docs/architecture.png)
+
 
 The system has three logical parts:
 
